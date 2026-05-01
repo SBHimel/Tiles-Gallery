@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-gray-50 border-t pt-12 pb-8 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         
-        {/* ১. ওয়েবসাইট লোগো ও বর্ণনা */}
+      
         <div>
           <h3 className="font-black text-2xl tracking-tighter mb-4">TilesGallery.</h3>
           <p className="text-gray-500 text-sm leading-relaxed">
@@ -19,7 +19,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* ২. সোশ্যাল মিডিয়া লিংকস (Social Media) */}
         <div>
           <h4 className="font-bold text-lg mb-4">Follow Us</h4>
           <ul className="flex flex-col gap-2 text-sm text-gray-600">
@@ -46,7 +45,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* ৩. যোগাযোগ (Contact Us) */}
+        
         <div>
           <h4 className="font-bold text-lg mb-4">Contact Us</h4>
           <ul className="text-sm text-gray-600 space-y-2">
@@ -59,7 +58,6 @@ const Footer = () => {
 
       <div className="w-full h-px bg-gray-300 my-6" />
 
-      {/* কপিরাইট সেকশন */}
       <div className="text-center text-gray-400 text-xs">
         <p>© {new Date().getFullYear()} TilesGallery. All rights reserved.</p>
       </div>

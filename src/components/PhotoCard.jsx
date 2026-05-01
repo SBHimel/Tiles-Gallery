@@ -7,11 +7,11 @@ import { FaHeart } from "react-icons/fa";
 
 const PhotoCard = ({ photo }) => {
     return (
-        // 'h-full' এবং 'flex-col' যোগ করা হয়েছে যাতে কার্ড লম্বা হয় এবং সমান থাকে
+        
         <Card className="border rounded-2xl p-3 hover:shadow-xl transition duration-300 h-full flex flex-col justify-between">
 
             <div>
-                {/* Image Container - Aspect Square */}
+               
                 <div className="relative w-full aspect-square overflow-hidden rounded-xl bg-gray-100">
                     <Image
                         src={photo.image}
@@ -21,12 +21,12 @@ const PhotoCard = ({ photo }) => {
                         className="object-cover hover:scale-105 transition duration-300"
                     />
 
-                    {/* Category Chip */}
+                   
                     <Chip size="sm" color="secondary" className="absolute top-2 right-2 capitalize font-semibold shadow-sm">
                         {photo.category}
                     </Chip>
 
-                    {/* Stock Badge */}
+                 
                     {!photo.inStock && (
                         <span className="absolute top-2 left-2 bg-red-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase">
                             Out of Stock
@@ -36,7 +36,7 @@ const PhotoCard = ({ photo }) => {
 
                 {/* Content */}
                 <div className="mt-4 space-y-2">
-                    {/* Title - নির্দিষ্ট হাইট দেওয়া হয়েছে যাতে ২ লাইন পর্যন্ত সমান থাকে */}
+                    
                     <h2 className="font-bold text-xl leading-tight min-h-[56px] line-clamp-2">
                         {photo.title}
                     </h2>
@@ -48,7 +48,7 @@ const PhotoCard = ({ photo }) => {
                 </div>
             </div>
 
-            {/* নিচের অংশ - যা সবসময় একদম নিচে থাকবে */}
+        
             <div className="mt-4">
                 {/* Price + Like */}
                 <div className="flex justify-between items-center">
