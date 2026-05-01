@@ -29,32 +29,34 @@ const Navbar = () => {
         </Link>
 
         {/* ৩. মেনু লিংকসমূহ (ডাইনামিক ক্লাস সহ) */}
-        <ul className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-8 text-sm font-medium">
-          <li>
-            <Link 
-              href="/" 
-              className={pathname === "/" ? activeLink : inactiveLink}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link 
-              href="/all-tiles" 
-              className={pathname === "/all-tiles" ? activeLink : inactiveLink}
-            >
-              All Tiles
-            </Link>
-          </li>
-          <li>
-            <Link 
-              href="/my-profile" 
-              className={pathname === "/my-profile" ? activeLink : inactiveLink}
-            >
-              My Profile
-            </Link>
-          </li>
-        </ul>
+       <ul className="flex flex-wrap md:flex-nowrap items-center justify-center gap-x-4 gap-y-2 md:gap-8 text-sm font-medium">
+  <li>
+    <Link 
+      href="/" 
+      className={pathname === "/" ? activeLink : inactiveLink}
+    >
+      Home
+    </Link>
+  </li>
+
+  <li>
+    <Link 
+      href="/all-tiles" 
+      className={pathname === "/all-tiles" ? activeLink : inactiveLink}
+    >
+      All Tiles
+    </Link>
+  </li>
+
+  <li>
+    <Link 
+      href="/my-profile" 
+      className={pathname === "/my-profile" ? activeLink : inactiveLink}
+    >
+      My Profile
+    </Link>
+  </li>
+</ul>
 
         {/* ডান দিক: লগইন/প্রোফাইল */}
         <div className="flex items-center gap-4">
