@@ -27,16 +27,16 @@ const Banner = () => {
         </p>
 
         <div className="animate__animated animate__zoomIn animate__delay-2s">
-          <Button
-            as={Link}
-            href="/all-tiles"
-            color="primary"
-            size="lg"
-            radius="full"
-            className="font-bold text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform"
-          >
-            Browse Now
-          </Button>
+          <Link href="/all-tiles">
+  <Button
+    color="primary"
+    size="lg"
+    radius="full"
+    className="font-bold text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform"
+  >
+    Browse Now
+  </Button>
+</Link>
         </div>
       </div>
     </section>
