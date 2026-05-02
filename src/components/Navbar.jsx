@@ -74,7 +74,8 @@ const Navbar = () => {
                 color="primary"
                 variant={pathname === "/login" ? "solid" : "flat"}
                 size="sm"
-                className="font-bold rounded-md"
+                className="font-extrabold
+                bg-gray-300 text-[14px] hover:bg-gray-500 hover:text-white"
               >
                 Login
               </Button>
