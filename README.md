@@ -57,29 +57,6 @@ Users can:
 
 ---
 
-## 📂 Project Structure
-
-
-src/
-├── app/
-│ ├── page.jsx (Home)
-│ ├── login/
-│ ├── register/
-│ ├── all-tiles/
-│ ├── tile/[id]/
-│ ├── my-profile/
-│
-├── lib/
-│ ├── auth-client.js
-│ ├── auth.js
-│
-├── components/
-│ ├── Navbar
-│ ├── Banner
-│ ├── Footer
-
-
----
 
 ## 🔐 Authentication Features
 
