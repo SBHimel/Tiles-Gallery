@@ -4,7 +4,7 @@ import PhotoCard from './PhotoCard';
 const TopGenerations = async () => {
     const res = await fetch('https://tiles-gallery-opal.vercel.app/data.json')
     const photos = await res.json()
-    const topPhotos = photos.slice(0, 6)
+    const topPhotos = photos.slice(0, 4)
 
     // console.log(topPhotos);
     return (
