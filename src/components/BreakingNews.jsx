@@ -11,7 +11,7 @@ const BreakingNews = () => {
 
     return (
         <div className="bg-blue-600 py-2 overflow-hidden flex items-center">
-            {/* ১. লেটেস্ট নিউজ বাটন (বাম পাশে ফিক্সড থাকবে) */}
+            
             <div className="pl-4 pr-2 z-1">
                 <button className="relative bg-[#1E3A8A] text-white px-6 py-3 rounded-md font-bold text-lg shadow-md animate-pulse border border-blue-400 whitespace-nowrap">
                     Latest News
@@ -19,7 +19,7 @@ const BreakingNews = () => {
                 </button>
             </div>
 
-            {/* ২. মারকুই সেকশন */}
+         
             <Marquee gradient={false} speed={50} pauseOnHover={true}>
                 {keywords.map((text, index) => (
                     <div key={index} className="flex items-center mx-10">

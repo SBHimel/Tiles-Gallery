@@ -45,7 +45,7 @@ const Navbar = () => {
         </Link>
 
         {/* Links */}
-        {/* Links - এগুলো সবসময় দৃশ্যমান থাকবে */}
+        
         <ul className="flex gap-8 text-sm font-medium">
           <li>
             <Link href="/" className={pathname === "/" ? activeLink : inactiveLink}>Home</Link>

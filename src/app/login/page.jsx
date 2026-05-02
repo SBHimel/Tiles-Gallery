@@ -118,7 +118,7 @@ export default function loginPage() {
             <p className="text-center">Or</p>
             <Button onClick={handleGoogleSignIn} variant="outline" className={'w-full'}> <GrGoogle></GrGoogle> Sign In With Google </Button>
 
-            {/* Login বাটনের নিচে এই অংশটুকু দিতে পারো */}
+           
             <p className="text-center mt-2 text-sm text-gray-600">
                 Don't have an account?{" "}
                 <Link href="/register" className="text-primary font-bold hover:underline">
