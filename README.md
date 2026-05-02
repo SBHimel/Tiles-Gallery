@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧱 Tiles Gallery
 
-## Getting Started
+A modern full-stack web application to showcase a beautiful collection of tiles with authentication, search, and detailed view features.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Demo
+🔗 https://tiles-gallery-opal.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📌 Project Purpose
+This project is built as an assignment to demonstrate a fully responsive tile gallery website with authentication, dynamic routing, and modern UI design using Next.js.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Users can:
+- Browse tiles
+- Search tiles
+- View detailed information
+- Register & login
+- Manage profile
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🔐 Authentication (Email & Google Login using BetterAuth)
+- 🏠 Home page with banner & featured tiles
+- 🖼️ All tiles gallery with search functionality
+- 🔍 Single tile details page (dynamic routing)
+- 👤 User profile page with update feature
+- 📱 Fully responsive design (Mobile, Tablet, Desktop)
+- ⚡ Fast performance using Next.js App Router
+- 🎨 Modern UI with HeroUI
+- 🔄 Loading & error handling
+- 🚫 Protected routes for authenticated users
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- HeroUI
+- BetterAuth
+- MongoDB
+- Vercel (Deployment)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📦 NPM Packages Used
+
+- better-auth
+- @heroui/react
+- react-icons
+- animate.css
+
+---
+
+## 📂 Project Structure
+
+
+src/
+├── app/
+│ ├── page.jsx (Home)
+│ ├── login/
+│ ├── register/
+│ ├── all-tiles/
+│ ├── tile/[id]/
+│ ├── my-profile/
+│
+├── lib/
+│ ├── auth-client.js
+│ ├── auth.js
+│
+├── components/
+│ ├── Navbar
+│ ├── Banner
+│ ├── Footer
+
+
+---
+
+## 🔐 Authentication Features
+
+- Email & Password Login
+- Google Login (OAuth)
+- User session management
+- Protected routes using BetterAuth
+
+---
+
+## 📱 Responsive Design
+
+✔ Mobile friendly  
+✔ Tablet optimized  
+✔ Desktop full layout  
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env.local` file:
+
+
+
+
+---
+
+## 🚀 Deployment
+
+Project is deployed using **Vercel**.
+
+Steps:
+1. Push to GitHub
+2. Connect repo to Vercel
+3. Auto deploy on every commit
+
+---
+
+## 🧑‍💻 Developer
+
+- Built by: Your Name
+- Course: Diploma in Computer Science
+- Project Type: Assignment (Category-A8-Apple)
+
+---
+
+## 📌 Notes
+
+- Email verification is not implemented as per assignment instructions
+- Focus is on authentication, UI, and routing
+- Fully SPA with protected routes
+
+---
+
+## ⭐ Thank You
