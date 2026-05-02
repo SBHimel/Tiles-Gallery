@@ -22,7 +22,7 @@ const AllTilesPage = () => {
             });
     }, []);
 
-  
+
     useEffect(() => {
         let tempTiles = tiles;
 
@@ -54,18 +54,17 @@ const AllTilesPage = () => {
                 <h1 className="text-3xl font-black tracking-tighter">Explore All Tiles</h1>
 
                 <div className="w-full md:w-96">
-                    <Input
-                        fullWidth
-                        placeholder="Search by tile name..."
-                        startContent={
-                            <div className="pointer-events-none flex items-center">
-                                <FaSearch className="text-gray-400" />
-                            </div>
-                        }
-                        value={search}
-                        onChange={(e) => setSearch(e.target.value)}
-                        className="shadow-sm"
-                    />
+                    <div className="relative">
+                        <FaSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+
+                        <Input
+                            fullWidth
+                            placeholder="Search by tile name..."
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                            className="pl-10 shadow-sm"
+                        />
+                    </div>
                 </div>
             </div>
 

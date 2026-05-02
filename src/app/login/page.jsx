@@ -11,6 +11,8 @@ import {
     Label,
     TextField,
 } from "@heroui/react";
+import Link from "next/link";
+import { GrGoogle } from "react-icons/gr";
 
 
 export default function loginPage() {
@@ -19,17 +21,17 @@ export default function loginPage() {
     const onSubmit = async (e) => {
         e.preventDefault();
 
-       
+
         const email = e.target.email.value;
         const password = e.target.password.value;
 
         // console.log({name, image, email, password});
 
         const { data, error } = await authClient.signIn.email({
-   
+
             email,
             password,
-            callbackURL:'/'
+            callbackURL: '/'
 
         });
         console.log(data, error);
@@ -40,8 +42,16 @@ export default function loginPage() {
 
         if (data) {
             alert(`✅ Login successful 🎉`);
-           
+
         }
+    };
+
+
+    const handleGoogleSignIn = async () => {
+        await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/"
+        });
     };
 
     return (
@@ -49,7 +59,7 @@ export default function loginPage() {
             <h1 className="text-center text-2xl font-bold">Login</h1>
 
             <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
-               
+
 
                 <TextField
                     isRequired
@@ -105,6 +115,16 @@ export default function loginPage() {
                     </Button>
                 </div>
             </Form>
+            <p className="text-center">Or</p>
+            <Button onClick={handleGoogleSignIn} variant="outline" className={'w-full'}> <GrGoogle></GrGoogle> Sign In With Google </Button>
+
+            {/* Login বাটনের নিচে এই অংশটুকু দিতে পারো */}
+            <p className="text-center mt-2 text-sm text-gray-600">
+                Don't have an account?{" "}
+                <Link href="/register" className="text-primary font-bold hover:underline">
+                    Register here
+                </Link>
+            </p>
         </Card>
     );
 }

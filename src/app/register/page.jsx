@@ -11,7 +11,9 @@ import {
     Label,
     TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { GrGoogle } from "react-icons/gr";
 
 export default function registerPage() {
     const router = useRouter();
@@ -43,6 +45,13 @@ export default function registerPage() {
             alert(`✅ Signup successful 🎉`);
             router.push('/login');
         }
+    };
+
+    const handleGoogleSignIn = async () => {
+        await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/",
+        });
     };
 
     return (
@@ -116,6 +125,15 @@ export default function registerPage() {
                     </Button>
                 </div>
             </Form>
+            <Button onClick={handleGoogleSignIn} variant="outline" className={'w-full'}> <GrGoogle></GrGoogle> Sign In With Google </Button>
+
+           
+            <p className="text-center mt-2 text-sm text-gray-600">
+                Already have an account?{" "}
+                <Link href="/login" className="text-primary font-bold hover:underline">
+                    Login here
+                </Link>
+            </p>
         </Card>
     );
 }
