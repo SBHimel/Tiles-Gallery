@@ -1,5 +1,9 @@
 # 🧱 Tiles Gallery
 
+![Tiles Gallery Banner](<img width="687" height="720" alt="image" src="https://github.com/user-attachments/assets/5d01ace4-061e-4695-8bdd-e11c60b6856e" />
+)
+
+
 A modern full-stack web application to showcase a beautiful collection of tiles with authentication, search, and detailed view features.
 
 ---
