@@ -79,8 +79,20 @@ Users can:
 
 Create a `.env.local` file:
 
+---
 
+### 💻 Local Setup Guideline
+Project-ti apnar local machine-e run korte nicheya steps-gulo follow korun:
 
+1. Repository-ti clone korun:
+   `git clone https://github.com/SBHimel/Tiles-Gallery.git`
+2. Folder-e dhukun:
+   `cd Tiles-Gallery`
+3. Dependencies install korun:
+   `npm install`
+4. `.env.local` file create korun ebong uporer `Environment Variables` section-e deya keys-gulo add korun.
+5. Project-ti run korun:
+   `npm run dev`
 
 ---
 
