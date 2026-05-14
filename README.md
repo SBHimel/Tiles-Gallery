@@ -54,6 +54,7 @@ Users can:
 - @heroui/react
 - react-icons
 - animate.css
+- mongodb
 
 ---
 
