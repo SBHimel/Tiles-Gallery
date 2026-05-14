@@ -1,6 +1,6 @@
+<img width="687" height="720" alt="Screenshot 2026-05-14 080523" src="https://github.com/user-attachments/assets/a8112d03-d5bc-4fbf-8acc-2eb579e6381b" />
 # 🧱 Tiles Gallery
 
-![Tiles Gallery Screenshot](https://github.com/user-attachments/assets/e09e6c46-7649-4361-9c3a-9694ec311825)
 
 A modern full-stack web application to showcase a beautiful collection of tiles with authentication, search, and detailed view features.
 
